@@ -8,7 +8,7 @@ const refs = {
 
 const LOCALSTORAGE_KEY = 'feedback-form-state';
 
-refs.form.addEventListener('input', throttle(onFormInput, 1000));
+refs.form.addEventListener('input', throttle(onFormInput, 500));
 
 function onFormInput() {
   let inputMsg = refs.input.value;
